@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packmore Ürün Öneri Botu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Packmore Ürün Öneri Botu</h1>
+    <form id="recommendation-form">
+      <label>Kullanım Amacı:
+        <select id="usage">
+          <option>Kargo gönderimi</option>
+          <option>Depolama</option>
+          <option>Ürün koruma</option>
+          <option>Verimli bantlama</option>
+          <option>Sürdürülebilir seçenekler</option>
+        </select>
+      </label>
+      <label>Ürün Grubu:
+        <select id="product">
+          <option>Koliler</option>
+          <option>Bantlar</option>
+          <option>Bant makineleri</option>
+          <option>Koruyucu ambalaj</option>
+          <option>Kargo poşetleri</option>
+        </select>
+      </label>
+      <label>Fiyat Tercihi:
+        <select id="price">
+          <option>Ekonomik</option>
+          <option>Uygun fiyat/kalite dengesi</option>
+          <option>Premium</option>
+        </select>
+      </label>
+      <label>Sürdürülebilirlik:
+        <select id="eco">
+          <option>Evet</option>
+          <option>Farketmez</option>
+          <option>Hayır</option>
+        </select>
+      </label>
+      <button type="submit">Ürün Öner</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
